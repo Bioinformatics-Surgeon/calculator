@@ -2,7 +2,7 @@ import { Button } from "antd";
 import React from "react";
 
 const Btn = ({
-  size = "default",
+  size = "large",
   icon,
   text,
   style,
