@@ -18,8 +18,6 @@ class Queue {
     const operator = this.dequeue();
     const secondNum = parseInt(this.dequeue());
 
-    console.log(typeof firstNum);
-
     switch (operator) {
       case "x":
         return firstNum * secondNum;

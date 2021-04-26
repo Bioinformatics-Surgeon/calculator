@@ -92,9 +92,9 @@ const Home = () => {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col offset={1} span={15} style={styles.numbers}>
-            <Row gutter={[40, 64]} style={styles.numberRow}>
+        <Row style={{ marginRight: "16px", marginLeft: "16px" }}>
+          <Col offset={0} span={16} style={styles.numbers}>
+            <Row gutter={[16, 32]} style={styles.numberRow}>
               <Col span={8}>
                 <Btn handleClick={handleClick} text={"7"} value={"7"} />
               </Col>
@@ -136,21 +136,26 @@ const Home = () => {
               </Col>
             </Row>
           </Col>
-          <Col offset={1} span={6} style={styles.operators}>
-            <Row gutter={[40, 64]} style={styles.operatorRow}>
-              <Col span={24}>
+          <Col push={2} span={6} style={styles.operators}>
+            <Row
+              gutter={[64, 32]}
+              style={styles.operatorRow}
+              justify="center"
+              align="middle"
+            >
+              <Col span={24} style={{ textAlign: "center" }}>
                 <Btn handleClick={handleClick} text={"/"} value={"/"} />
               </Col>
 
-              <Col span={24}>
+              <Col span={24} style={{ textAlign: "center" }}>
                 <Btn handleClick={handleClick} text={"x"} value={"x"} />
               </Col>
 
-              <Col span={24}>
+              <Col span={24} style={{ textAlign: "center" }}>
                 <Btn handleClick={handleClick} text={"-"} value={"-"} />
               </Col>
 
-              <Col span={24}>
+              <Col span={24} style={{ textAlign: "center" }}>
                 <Btn handleClick={handleClick} text={"+"} value={"+"} />
               </Col>
             </Row>
@@ -164,12 +169,12 @@ const Home = () => {
 const styles = {
   main: {
     width: "500px",
-    height: "666px",
+    height: "566px",
     background: "rgba(0,0,0,.05)",
   },
   topPad: {
     width: "100%",
-    height: "32px",
+    height: "16px",
   },
   screen: {
     height: "200px",
@@ -180,13 +185,13 @@ const styles = {
     borderRadius: "5px",
   },
   numbers: {
-    height: "400px",
+    height: "300px",
     marginTop: "32px",
     background: "rgba(0,0,0,.1)",
     borderRadius: "5px",
   },
   operators: {
-    height: "400px",
+    height: "300px",
     marginTop: "32px",
     background: "rgba(0,0,0,.1)",
     borderRadius: "5px",
@@ -196,7 +201,6 @@ const styles = {
   },
   operatorRow: {
     paddingTop: "24px",
-    paddingLeft: "38px",
   },
   insideScreen: {
     height: "166px",
