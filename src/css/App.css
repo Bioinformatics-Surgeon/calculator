@@ -77,3 +77,7 @@ div.ant-collapse-content-box {
     opacity: 1;
   }
 }
+
+button > * {
+  pointer-events: none;
+}

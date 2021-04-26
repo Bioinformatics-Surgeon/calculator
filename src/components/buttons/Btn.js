@@ -3,13 +3,12 @@ import React from "react";
 
 const Btn = ({
   size = "large",
-  icon,
   text,
   style,
+  value,
   type = "primary",
   handleClick = () => console.log("you clicked me"),
 }) => {
-  const hasIcon = icon ? true : false;
   const hasText = text ? true : false;
 
   return (
@@ -19,8 +18,8 @@ const Btn = ({
       style={{ ...style }}
       shape="round"
       type={type}
+      value={value}
     >
-      {hasIcon && icon}
       {hasText && text}
     </Button>
   );
